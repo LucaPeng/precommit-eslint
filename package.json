@@ -1,0 +1,57 @@
+{
+  "name": "precommit-eslint",
+  "version": "0.0.1",
+  "description": "execute eslint check before git commit, through git_hook",
+  "license": "MIT",
+  "author": "songpeng <little.dreaming.bear@gmail.com> ()",
+  "keywords": [
+    "eslint",
+    "precommit",
+    "commit",
+    "git"
+  ],
+  "main": "scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "precommit": "lint-staged"
+  },
+  "files": [
+    "bin/",
+    "scripts/",
+    "index.d.ts",
+    "README.md"
+  ],
+  "bin": {
+    "npm-create-node": "bin/index.js"
+  },
+  "dependencies": {
+    "eslint-diff": "^0.0.3",
+    "typescript": "^2.8.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.1",
+    "eslint": "4.17.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-mfe": "^0.1.1",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-node": "6.0.0",
+    "eslint-plugin-typescript": "0.8.1",
+    "husky": "0.14.3",
+    "lint-staged": "6.1.0",
+    "typescript-eslint-parser": "15.0.0"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "homepage": "https://github.com/LucaPeng/precommit-eslint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LucaPeng/precommit-eslint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LucaPeng/precommit-eslint/issues"
+  },
+  "lint-staged": {
+    "src/*/*.{js,ts}": "eslint"
+  }
+}
