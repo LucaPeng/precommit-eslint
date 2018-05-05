@@ -1,5 +1,5 @@
 {
-  "name": "precommit-eslint",
+  "name": "pre-commit-eslint",
   "version": "0.0.1",
   "description": "execute eslint check before git commit, through git_hook",
   "license": "MIT",
