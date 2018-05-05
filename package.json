@@ -23,13 +23,14 @@
     "README.md"
   ],
   "bin": {
-    "npm-create-node": "bin/index.js"
+    "precommit-eslint": "bin/index.js"
   },
   "dependencies": {
     "eslint-diff": "^0.0.3",
     "typescript": "^2.8.3"
   },
   "devDependencies": {
+    "@types/node": "8.9.1",
     "babel-eslint": "8.2.1",
     "eslint": "4.17.0",
     "eslint-config-airbnb-base": "12.1.0",

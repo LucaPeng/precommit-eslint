@@ -54,6 +54,10 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
+"@types/node@8.9.1":
+  version "8.9.1"
+  resolved "http://r.npm.sankuai.com/@types/node/download/@types/node-8.9.1.tgz#5a329d73a97f3c5a626dfe0ed8c0b831fee5357a"
+
 acorn-jsx@^3.0.0:
   version "3.0.1"
   resolved "http://r.npm.sankuai.com/acorn-jsx/download/acorn-jsx-3.0.1.tgz#afdf9488fb1ecefc8348f6fb22f464e32a58b36b"

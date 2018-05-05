@@ -1,9 +1,14 @@
 #!/usr/bin/env node --harmony
 
-const params = process.argv.slice(2);
-let index = 0;
+const eslintDiff = require('eslint-diff');
 
-// solve params
-for(;index < params.length; index++) {
+const report = eslintDiff.check({
+  path: process.cwd(),
+  level: eslintInit.CheckLevel.ERROR,
+});
 
+if (report.errorCount + report.warningCount > 0) {
+  // format
+  console.log(eslintDiff.format(result));
+  process.exit(1);
 }

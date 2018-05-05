@@ -4,5 +4,9 @@ module.exports = {
   extends: [
     'eslint-config-mfe/eslintrc.node.js',
     'eslint-config-mfe/eslintrc.typescript-node.js'
-  ]
+  ],
+  rules: {
+    indent: [2, 2, { SwitchCase: 1}],
+    'prefer-numeric-literals': 0
+  }
 }

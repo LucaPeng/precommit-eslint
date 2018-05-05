@@ -1,0 +1,13 @@
+#!/bin/sh
+#precommit-eslint
+
+export PATH="$PATH:/usr/local/bin:/usr/local"
+export PATH="$PATH:/c/Program Files/nodejs"
+
+echo "**start eslint**"
+echo
+./node_modules/.bin/precommit-eslint || {
+    echo
+    echo "**eslint failed**"
+    exit 1
+}
